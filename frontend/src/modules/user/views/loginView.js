@@ -53,6 +53,7 @@ define(function(require) {
       var inputUsernameEmail = $.trim(this.$("#login-input-username").val());
       var inputPassword = $.trim(this.$("#login-input-password").val());
       var shouldPersist = this.$('#remember-me').prop('checked');
+      var onetimepass = $.trim(this.$("#otp").val());
 
       // Validation
       if (inputUsernameEmail === '' || inputPassword === '') {
@@ -60,16 +61,16 @@ define(function(require) {
         return false;
       } else {
         $('#login-input-username').removeClass('input-error');
+        $('#otp').removeAttr("hidden", "hidden");
       }
 
       var userModel = this.model;
 
-      userModel.login(inputUsernameEmail, inputPassword, shouldPersist);
+      userModel.login(inputUsernameEmail, inputPassword, shouldPersist ,onetimepass );
     },
-
     loginFailed: function(errorCode) {
       var errorMessage = '';
-
+      $('#otp').attr('hidden','hidden');
       switch (errorCode) {
         case LoginView.ERR_INVALID_CREDENTIALS:
         case LoginView.ERR_MISSING_FIELDS:
@@ -85,9 +86,8 @@ define(function(require) {
           errorMessage = Origin.l10n.t('app.accountnotactive');
           break;
       }
-
       $('#login-input-username').addClass('input-error');
-      $('#login-input-password').val('');
+     // $('#login-input-password').val('');
       $('#loginErrorMessage').text(errorMessage);
       $('#loginError').removeClass('display-none');
     }

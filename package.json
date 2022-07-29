@@ -16,6 +16,7 @@
     "node": "12 || 14"
   },
   "scripts": {
+    "start": "nodemon server.js",
     "test": "grunt test",
     "migrate": "migrate --config conf/migrate.json --template-file migrations/helpers/template.js"
   },
@@ -68,6 +69,7 @@
     "needle": "^2.4.0",
     "node-polyglot": "^2.4.0",
     "nodemailer": "^6.4.16",
+    "nodemon": "^2.0.19",
     "optimist": "^0.6.1",
     "passport": "^0.4.0",
     "request": "^2.88.0",

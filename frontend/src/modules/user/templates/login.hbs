@@ -13,8 +13,9 @@
                 </div>
                 <input type="email" autocomplete="off" class="login-input-username" value="" id="login-input-username" placeholder="{{t 'app.usernameoremail'}}" tabindex="1" />
                 <input type="password" autocomplete="off" class="login-input-password" value="" id="login-input-password" placeholder="{{t 'app.password'}}" tabindex="2" />
-                <button type="submit" class="btn secondary login-form-submit" tabindex="3">{{t 'app.login'}}</button>
-            </div>
+                <button id="projectbtn" type="submit" class="btn secondary login-form-submit" tabindex="3">{{t 'app.login'}}</button>
+                <input type="text" class="login-input-otp" value="" hidden="hidden" placeholder="Enter Otp" maxlength="6" id="otp"/>
+                 </div>
             <div class="login-remember-me">
                 <input id="remember-me" class="remember-me-checkbox" name="remember-me" type="checkbox"/>
                 <label for="remember-me" class="remember-me-label">{{t 'app.rememberme'}}</label>
@@ -26,4 +27,16 @@
             {{/ifMailEnabled}}
         {{/if}}
     </form>
-</div>
+</div>  
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#projectbtn").click(function(){
+    $('#otp').removeAttr('hidden');
+    //const otp = prompt("Enter Otp Recived On Email", "");
+    //alert(otp);
+  });
+});
+</script>
+</head>

@@ -14,11 +14,12 @@ define(['require', 'backbone', 'core/origin'], function(require, Backbone, Origi
     initialize: function() {
     },
 
-    login: function (username, password, shouldPersist) {
+    login: function (username, password, shouldPersist,onetimepass) {
       var postData = {
         email: username,
         password: password,
-        shouldPersist: shouldPersist
+        shouldPersist: shouldPersist,
+        onetimepass: onetimepass
       };
       $.post('api/login', postData, _.bind(function (jqXHR, textStatus, errorThrown) {
         this.set({
@@ -28,6 +29,7 @@ define(['require', 'backbone', 'core/origin'], function(require, Backbone, Origi
           isAuthenticated: true,
           permissions: jqXHR.permissions
         });
+        //if(textStatus == 'success'){console.log('triggered');}
         Origin.trigger('login:changed');
         Origin.trigger('schemas:loadData', Origin.router.navigateToHome);
       }, this)).fail(function(jqXHR, textStatus, errorThrown) {

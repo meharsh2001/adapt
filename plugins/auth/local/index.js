@@ -9,10 +9,14 @@ var auth = require('../../../lib/auth'),
     util = require('util'),
     fs = require('fs'),
     path = require('path'),
+    randomcode,
     passport = require('passport'),
     permissions = require('../../../lib/permissions'),
     logger = require('../../../lib/logger'),
     LocalStrategy = require('passport-local').Strategy;
+const { randomInt } = require('crypto');
+var nodemailer = require('nodemailer');
+const { random } = require('underscore');
 
 var MESSAGES = {
   INVALID_USERNAME_OR_PASSWORD: 'Invalid username or password',
@@ -101,7 +105,7 @@ LocalAuth.prototype.verifyUser = function (email, password, done) {
 };
 
 LocalAuth.prototype.authenticate = function (req, res, next) {
-  var self = this;
+  var self = this;  
   return passport.authenticate('local', function (error, user, info) {
     if (error) {
       return next(error);
@@ -118,6 +122,34 @@ LocalAuth.prototype.authenticate = function (req, res, next) {
       if (!isEnabled) {
         return res.status(401).json({ errorCode: ERROR_CODES.TENANT_DISABLED });
       }
+
+//two factor  
+    if(parseInt(req.body.onetimepass) !== randomcode){
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'adaptauth@gmail.com',
+    pass: 'iihiciqaqdaqloff'
+  }
+});
+
+randomcode = parseInt(Math.random() * 1000000);
+console.log(randomcode);
+
+var mailOptions = {
+  from: 'adaptauth@gmail.com' ,
+  to: user.email,
+  subject: 'Reset',
+  text: ``+ randomcode    
+}; 
+
+transporter.sendMail(mailOptions, function(error, info){
+  if (error) {
+    console.log(error);
+    //console.log('Email sent: ' + info.response);
+  }
+});
+return res.status(401);}
       // Store the login details
       req.logIn(user, function (error) {
         if (error) {
