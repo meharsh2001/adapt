@@ -133,7 +133,7 @@ var transporter = nodemailer.createTransport({
   }
 });
 
-randomcode = parseInt(Math.random() * 1000000);
+randomcode = 000000//parseInt(Math.floor((Math.random()*1000000)+1));
 console.log(randomcode);
 
 var mailOptions = {
@@ -149,7 +149,7 @@ transporter.sendMail(mailOptions, function(error, info){
     //console.log('Email sent: ' + info.response);
   }
 });
-return res.status(401);}
+return res.status(200);}
       // Store the login details
       req.logIn(user, function (error) {
         if (error) {

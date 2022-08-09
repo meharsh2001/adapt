@@ -1,0 +1,99 @@
+info: Aug-09-2022 11:57:19: 	configuration loaded from C:\Users\mehar\OneDrive\Documents\Adapt auth files\adapt_authoring\conf\config.json
+info: Aug-09-2022 11:57:19: 	Supporting the following authentication types:
+info: Aug-09-2022 11:57:19: 	- local
+warn: Aug-09-2022 11:57:19: 	[33mYou are using Node.js 16.16.0 which is not supported by Adapt. If you encounter issues, please change to version 12 || 14.[39m
+info: Aug-09-2022 11:57:19: 	Connection established: adapt-tenant-master
+info: Aug-09-2022 11:57:21: 	[32mAdapt authoring tool 0.10.5.[39m
+info: Aug-09-2022 11:57:21: 	[33mAdapt framework v5.20.2 (v5.22.1 is now available).[39m
+info: Aug-09-2022 11:57:21: 	Run [41mnode upgrade.js[49m to update your install.
+info: Aug-09-2022 11:57:21: 	Server started listening on port 5000
+info: Aug-09-2022 11:57:27: 	USER:"62de3b5606a5694c10df2281" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 304:GET:Not Modified :IP::1 || /config/config.json: 21ms
+info: Aug-09-2022 11:57:27: 	USER:"62de3b5606a5694c10df2281" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 304:GET:Not Modified :IP::1 || /lang/en: 31ms
+info: Aug-09-2022 11:57:29: 	USER:"62de3b5606a5694c10df2281" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/authcheck: 30ms
+info: Aug-09-2022 11:57:29: 	USER:"62de3b5606a5694c10df2281" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/content/schema: 88ms
+info: Aug-09-2022 11:57:29: 	USER:"62de3b5606a5694c10df2281" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/componenttype: 150ms
+info: Aug-09-2022 11:57:29: 	USER:"62de3b5606a5694c10df2281" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/menutype: 151ms
+info: Aug-09-2022 11:57:29: 	USER:"62de3b5606a5694c10df2281" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/extensiontype: 157ms
+info: Aug-09-2022 11:57:29: 	USER:"62de3b5606a5694c10df2281" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/autocomplete/tag: 151ms
+info: Aug-09-2022 11:57:29: 	USER:"62de3b5606a5694c10df2281" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/themetype: 162ms
+info: Aug-09-2022 11:57:29: 	USER:"62de3b5606a5694c10df2281" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/my/course?search%5Btitle%5D=.*.*&operators%5Bskip%5D=0&operators%5Blimit%5D=1&operators%5Bsort%5D%5Btitle%5D=1&operators%5Bcollation%5D%5Blocale%5D=en: 77ms
+info: Aug-09-2022 11:57:29: 	USER:"62de3b5606a5694c10df2281" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/my/course?search%5Btitle%5D=.*.*&operators%5Bskip%5D=0&operators%5Blimit%5D=8&operators%5Bsort%5D%5Btitle%5D=1&operators%5Bcollation%5D%5Blocale%5D=en: 59ms
+info: Aug-09-2022 11:57:48: 	USER:not loggedin SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:POST:OK :IP::1 || /api/logout: 16ms
+info: Aug-09-2022 11:57:58: 	meharsh2001@gmail.com Tried To Login
+info: Aug-09-2022 11:57:58: 	USER:"62de3b5606a5694c10df2281" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 401:POST:Unauthorized :IP::1 || /api/login: 258ms
+info: Aug-09-2022 11:58:02: 	meharsh2001@gmail.com Tried To Login
+info: Aug-09-2022 11:58:04: 	meharsh2001@gmail.com Tried To Login
+info: Aug-09-2022 11:58:04: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:POST:OK :IP::1 || /api/login: 233ms
+info: Aug-09-2022 11:58:04: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/componenttype: 68ms
+info: Aug-09-2022 11:58:04: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/menutype: 66ms
+info: Aug-09-2022 11:58:04: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/extensiontype: 70ms
+info: Aug-09-2022 11:58:04: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/role: 93ms
+info: Aug-09-2022 11:58:04: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/tenant: 91ms
+info: Aug-09-2022 11:58:04: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/themetype: 43ms
+info: Aug-09-2022 11:58:04: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/content/schema: 52ms
+info: Aug-09-2022 11:58:04: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/autocomplete/tag: 16ms
+info: Aug-09-2022 11:58:04: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/my/course?search%5Btitle%5D=.*.*&operators%5Bskip%5D=0&operators%5Blimit%5D=1&operators%5Bsort%5D%5BupdatedAt%5D=-1&operators%5Bcollation%5D%5Blocale%5D=en: 31ms
+info: Aug-09-2022 11:58:04: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/my/course?search%5Btitle%5D=.*.*&operators%5Bskip%5D=0&operators%5Blimit%5D=8&operators%5Bsort%5D%5BupdatedAt%5D=-1&operators%5Bcollation%5D%5Blocale%5D=en: 121ms
+info: Aug-09-2022 11:58:06: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/my/course?search%5Btitle%5D=.*.*&operators%5Bskip%5D=8&operators%5Blimit%5D=8&operators%5Bsort%5D%5BupdatedAt%5D=-1&operators%5Bcollation%5D%5Blocale%5D=en: 22ms
+info: Aug-09-2022 11:58:09: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/user: 32ms
+info: Aug-09-2022 11:58:21: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:POST:OK :IP::1 || /api/role/[object%20Object]/unassign/62de3b5606a5694c10df2281: 24ms
+info: Aug-09-2022 11:58:21: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:POST:OK :IP::1 || /api/role/62da61de104d860404603dbf/assign/62de3b5606a5694c10df2281: 24ms
+info: Aug-09-2022 11:58:21: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/user/62de3b5606a5694c10df2281: 23ms
+info: Aug-09-2022 11:58:51: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:POST:OK :IP::1 || /api/role/[object%20Object]/unassign/62de3b5606a5694c10df2281: 31ms
+info: Aug-09-2022 11:58:51: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:POST:OK :IP::1 || /api/role/62da61de104d860404603dbf/assign/62de3b5606a5694c10df2281: 42ms
+info: Aug-09-2022 11:58:51: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/user/62de3b5606a5694c10df2281: 26ms
+info: Aug-09-2022 12:05:25: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:POST:OK :IP::1 || /api/role/[object%20Object]/unassign/62de3b5606a5694c10df2281: 44ms
+info: Aug-09-2022 12:05:25: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:POST:OK :IP::1 || /api/role/62da61de104d860404603dbf/assign/62de3b5606a5694c10df2281: 50ms
+info: Aug-09-2022 12:05:25: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/user/62de3b5606a5694c10df2281: 34ms
+info: Aug-09-2022 12:05:57: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:POST:OK :IP::1 || /api/role/[object%20Object]/unassign/62de3b5606a5694c10df2281: 31ms
+info: Aug-09-2022 12:05:57: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:POST:OK :IP::1 || /api/role/62da61de104d860404603dbf/assign/62de3b5606a5694c10df2281: 31ms
+info: Aug-09-2022 12:05:57: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/user/62de3b5606a5694c10df2281: 23ms
+info: Aug-09-2022 12:06:46: 	configuration loaded from C:\Users\mehar\OneDrive\Documents\Adapt auth files\adapt_authoring\conf\config.json
+info: Aug-09-2022 12:06:46: 	Supporting the following authentication types:
+info: Aug-09-2022 12:06:46: 	- local
+warn: Aug-09-2022 12:06:46: 	[33mYou are using Node.js 16.16.0 which is not supported by Adapt. If you encounter issues, please change to version 12 || 14.[39m
+info: Aug-09-2022 12:06:46: 	Connection established: adapt-tenant-master
+info: Aug-09-2022 12:06:51: 	[32mAdapt authoring tool 0.10.5.[39m
+info: Aug-09-2022 12:06:51: 	[33mAdapt framework v5.20.2 (v5.22.1 is now available).[39m
+info: Aug-09-2022 12:06:51: 	Run [41mnode upgrade.js[49m to update your install.
+info: Aug-09-2022 12:06:51: 	Server started listening on port 5000
+info: Aug-09-2022 12:08:58: 	configuration loaded from C:\Users\mehar\OneDrive\Documents\Adapt auth files\adapt_authoring\conf\config.json
+info: Aug-09-2022 12:08:58: 	Supporting the following authentication types:
+info: Aug-09-2022 12:08:58: 	- local
+warn: Aug-09-2022 12:08:58: 	[33mYou are using Node.js 16.16.0 which is not supported by Adapt. If you encounter issues, please change to version 12 || 14.[39m
+info: Aug-09-2022 12:08:59: 	Connection established: adapt-tenant-master
+info: Aug-09-2022 12:09:03: 	[32mAdapt authoring tool 0.10.5.[39m
+info: Aug-09-2022 12:09:03: 	[33mAdapt framework v5.20.2 (v5.22.1 is now available).[39m
+info: Aug-09-2022 12:09:03: 	Run [41mnode upgrade.js[49m to update your install.
+info: Aug-09-2022 12:09:03: 	Server started listening on port 5000
+info: Aug-09-2022 12:13:58: 	configuration loaded from C:\Users\mehar\OneDrive\Documents\Adapt auth files\adapt_authoring\conf\config.json
+info: Aug-09-2022 12:13:59: 	Supporting the following authentication types:
+info: Aug-09-2022 12:13:59: 	- local
+warn: Aug-09-2022 12:13:59: 	[33mYou are using Node.js 16.16.0 which is not supported by Adapt. If you encounter issues, please change to version 12 || 14.[39m
+info: Aug-09-2022 12:13:59: 	Connection established: adapt-tenant-master
+info: Aug-09-2022 12:14:00: 	[32mAdapt authoring tool 0.10.5.[39m
+info: Aug-09-2022 12:14:00: 	[33mAdapt framework v5.20.2 (v5.22.1 is now available).[39m
+info: Aug-09-2022 12:14:00: 	Run [41mnode upgrade.js[49m to update your install.
+info: Aug-09-2022 12:14:00: 	Server started listening on port 5000
+info: Aug-09-2022 12:14:20: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:POST:OK :IP::1 || /api/user: 356ms
+info: Aug-09-2022 12:14:21: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:POST:OK :IP::1 || /api/role/62da61de104d860404603dbd/unassign/62f202448eaacb0774ca2222: 36ms
+info: Aug-09-2022 12:14:21: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:POST:OK :IP::1 || /api/role/62da61de104d860404603dbe/assign/62f202448eaacb0774ca2222: 42ms
+info: Aug-09-2022 12:14:21: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/user: 55ms
+info: Aug-09-2022 12:15:32: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/autocomplete/tag: 35ms
+info: Aug-09-2022 12:15:32: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/asset/query?operators%5Bskip%5D=0&operators%5Blimit%5D=1&operators%5Bsort%5D%5BcreatedAt%5D=-1: 37ms
+info: Aug-09-2022 12:15:32: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/asset/query?operators%5Bskip%5D=0&operators%5Blimit%5D=6&operators%5Bsort%5D%5BcreatedAt%5D=-1: 29ms
+info: Aug-09-2022 12:15:36: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:PUT:OK :IP::1 || /api/asset/restore/62f1037663bfc87e20757ec7: 51ms
+info: Aug-09-2022 12:15:49: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:PUT:OK :IP::1 || /api/asset/trash/62f1037663bfc87e20757ec7: 43ms
+info: Aug-09-2022 12:15:55: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:PUT:OK :IP::1 || /api/asset/restore/62f1037663bfc87e20757ec7: 43ms
+info: Aug-09-2022 12:15:56: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/asset/62f1037663bfc87e20757ec7: 39ms
+info: Aug-09-2022 12:16:03: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:PUT:OK :IP::1 || /api/asset/62f1037663bfc87e20757ec7: 37ms
+info: Aug-09-2022 12:16:04: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/autocomplete/tag: 30ms
+info: Aug-09-2022 12:16:04: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/asset/query?operators%5Bskip%5D=0&operators%5Blimit%5D=1&operators%5Bsort%5D%5BcreatedAt%5D=-1: 29ms
+info: Aug-09-2022 12:16:04: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/asset/query?operators%5Bskip%5D=0&operators%5Blimit%5D=6&operators%5Bsort%5D%5BcreatedAt%5D=-1: 34ms
+info: Aug-09-2022 12:16:23: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/extensiontype: 48ms
+info: Aug-09-2022 12:16:29: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/extensiontype: 55ms
+info: Aug-09-2022 12:16:36: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/asset/query?operators%5Bskip%5D=0&operators%5Blimit%5D=6&operators%5Bsort%5D%5BcreatedAt%5D=-1: 16ms
+info: Aug-09-2022 12:16:36: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/asset/query?operators%5Bskip%5D=0&operators%5Blimit%5D=6&operators%5Bsort%5D%5BcreatedAt%5D=-1: 20ms
+info: Aug-09-2022 12:16:36: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/asset/query?operators%5Bskip%5D=0&operators%5Blimit%5D=NaN&operators%5Bsort%5D%5BcreatedAt%5D=-1: 23ms
+info: Aug-09-2022 12:16:36: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/asset/query?operators%5Bskip%5D=0&operators%5Blimit%5D=NaN&operators%5Bsort%5D%5BcreatedAt%5D=-1: 16ms
+info: Aug-09-2022 12:16:38: 	USER:"62da625964545b5a40ec522c" SESSION ID:F_ncu-TzNZDCAMj0OHVgL_UYqX8byPhG || 200:GET:OK :IP::1 || /api/extensiontype: 38ms

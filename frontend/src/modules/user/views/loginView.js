@@ -60,8 +60,9 @@ define(function(require) {
         this.loginFailed(LoginView.ERR_MISSING_FIELDS);
         return false;
       } else {
-        $('#login-input-username').removeClass('input-error');
+        $('#login-input-username').removeClass('input-error')
         $('#otp').removeAttr("hidden", "hidden");
+        this.loginFailed(LoginView.ERR_MISSING_OTP);
       }
 
       var userModel = this.model;
@@ -70,24 +71,46 @@ define(function(require) {
     },
     loginFailed: function(errorCode) {
       var errorMessage = '';
-      $('#otp').attr('hidden','hidden');
       switch (errorCode) {
+        case LoginView.ERR_MISSING_OTP:
+          $('#otp').val('');
+          $('#login-input-username').attr("hidden", "hidden");
+        $('#login-input-password').attr("hidden", "hidden");
+          errorMessage = Origin.l10n.t('app.otpsent');
+          //alert('Account Found OTP Sent to Your Email')
+          break;
         case LoginView.ERR_INVALID_CREDENTIALS:
         case LoginView.ERR_MISSING_FIELDS:
+          $('#login-input-password').val('');
+          $('#otp').attr("hidden", "hidden");
+          $('#login-input-username').removeAttr("hidden");
+          $('#login-input-password').removeAttr("hidden");
           errorMessage = Origin.l10n.t('app.invalidusernameorpassword');
           break;
         case LoginView.ERR_ACCOUNT_LOCKED:
+          $('#login-input-password').val('');
+          $('#otp').attr("hidden", "hidden");
+          $('#login-input-username').removeAttr("hidden");
+          $('#login-input-password').removeAttr("hidden");
           errorMessage = Origin.l10n.t('app.accountislocked');
           break;
         case LoginView.ERR_TENANT_DISABLED:
+          $('#login-input-password').val('');
+          $('#otp').attr("hidden", "hidden");
+          $('#login-input-username').removeAttr("hidden");
+          $('#login-input-password').removeAttr("hidden");
           errorMessage = Origin.l10n.t('app.tenantnotenabled');
           break;
         case LoginView.ERR_ACCOUNT_INACTIVE:
+          $('#otp').attr("hidden", "hidden");
+          $('#login-input-password').val('');
+          $('#login-input-username').removeAttr("hidden");
+          $('#login-input-password').removeAttr("hidden");
           errorMessage = Origin.l10n.t('app.accountnotactive');
           break;
+
       }
       $('#login-input-username').addClass('input-error');
-     // $('#login-input-password').val('');
       $('#loginErrorMessage').text(errorMessage);
       $('#loginError').removeClass('display-none');
     }
@@ -96,6 +119,7 @@ define(function(require) {
     ERR_INVALID_CREDENTIALS: 1,
     ERR_ACCOUNT_LOCKED: 2,
     ERR_MISSING_FIELDS: 3,
+    ERR_MISSING_OTP: 6,
     ERR_TENANT_DISABLED: 4,
     ERR_ACCOUNT_INACTIVE: 5,
     template: 'login'
